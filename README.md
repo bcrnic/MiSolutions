@@ -4,11 +4,11 @@
 
 A professional, modern website for MiSolutions - a digital agency specializing in business growth solutions, market intelligence, and digital transformation.
 
-## 🚀 Live Demo
+## Live Demo
 
 [https://bcrnic.github.io/MiSolutions/](https://bcrnic.github.io/MiSolutions/)
 
-## ✨ Features
+## Features
 
 - **Modern Design**: Dark theme with pink accent colors
 - **Responsive Layout**: Fully optimized for all devices
@@ -17,7 +17,7 @@ A professional, modern website for MiSolutions - a digital agency specializing i
 - **TypeScript**: Full type safety
 - **SEO Optimized**: Meta tags and structured data
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - **Frontend**: React 18 + TypeScript
 - **Build Tool**: Vite
@@ -28,7 +28,7 @@ A professional, modern website for MiSolutions - a digital agency specializing i
 - **Forms**: React Hook Form + Zod
 - **State Management**: TanStack Query
 
-## 📦 Installation
+## Installation
 
 1. Clone the repository:
 ```bash
@@ -48,7 +48,7 @@ npm run dev
 
 4. Open [http://localhost:8080](http://localhost:8080) in your browser
 
-## 🚀 Deployment
+## Deployment
 
 ### GitHub Pages
 
@@ -67,7 +67,7 @@ npm run build
 
 2. Deploy the `dist` folder to your hosting provider
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 MiSolutions/
@@ -84,21 +84,21 @@ MiSolutions/
 └── dist/               # Build output
 ```
 
-## 🎨 Design System
+## Design System
 
 - **Primary Colors**: Pink (#ec4899) gradient
 - **Background**: Dark theme (#1a1a1a)
 - **Typography**: Inter (sans-serif) + DM Serif Display (serif)
 - **Components**: shadcn/ui component library
 
-## 🔧 Available Scripts
+## Available Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -106,15 +106,15 @@ MiSolutions/
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contact
+## Contact
 
 - **GitHub**: [@bcrnic](https://github.com/bcrnic)
 - **Live Site**: https://bcrnic.github.io/MiSolutions/
 
 ---
 
-Built with ❤️ using React, TypeScript, and Tailwind CSS
+Built with using React, TypeScript, and Tailwind CSS
