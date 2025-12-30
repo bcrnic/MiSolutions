@@ -6,7 +6,7 @@ import heroAbstract from "@/assets/hero-abstract.svg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen bg-background overflow-hidden">
+    <section className="relative min-h-screen lg:min-h-[110vh] bg-background overflow-hidden">
       {/* Pink accent bar at top */}
       <motion.div 
         initial={{ scaleX: 0 }}
@@ -16,7 +16,7 @@ const HeroSection = () => {
       />
       
       {/* Main content */}
-      <div className="container mx-auto px-4 pt-32 pb-16">
+      <div className="container mx-auto px-4 pt-32 pb-20 lg:pb-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Content */}
           <div className="relative z-10">
@@ -119,84 +119,118 @@ const HeroSection = () => {
             </motion.div>
           </div>
 
-          {/* Right side - Image frame */}
+          {/* Right side - Full width image */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.9, x: 50 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-            className="relative"
+            className="relative lg:min-h-[800px] xl:min-h-[900px]"
           >
-            {/* Dark card with rounded top */}
-            <motion.div 
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.4 }}
-              className="relative bg-secondary rounded-t-[200px] rounded-b-3xl overflow-hidden min-h-[500px] border-4 border-primary"
-            >
-              {/* Hero Image */}
+            {/* Full size image container */}
+            <div className="relative w-full h-full rounded-3xl overflow-hidden">
+              {/* Hero Image - Full size */}
               <img 
                 src={heroAbstract} 
                 alt="Abstract business growth visualization" 
-                className="absolute inset-0 w-full h-full object-cover"
+                className="w-full h-full object-cover"
               />
               
-              {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/40 to-transparent" />
+              {/* Overlay gradient for text readability */}
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
 
-              {/* Rotating badge */}
-              <div className="absolute top-1/2 left-4 transform -translate-y-1/2 z-10">
-                <div className="relative w-24 h-24">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <motion.div 
-                      whileHover={{ scale: 1.2 }}
-                      className="w-14 h-14 bg-card rounded-full flex items-center justify-center"
-                    >
-                      <svg className="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                        <path d="M2 17l10 5 10-5" />
-                        <path d="M2 12l10 5 10-5" />
-                      </svg>
-                    </motion.div>
-                  </div>
-                  <motion.svg 
-                    animate={{ rotate: 360 }}
-                    transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-                    className="w-24 h-24" 
-                    viewBox="0 0 100 100"
-                  >
-                    <defs>
-                      <path id="circle" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
-                    </defs>
-                    <text className="text-[8px] fill-muted-foreground uppercase tracking-[0.3em]">
-                      <textPath href="#circle">
-                        • GET IN TOUCH • GET IN TOUCH 
-                      </textPath>
-                    </text>
-                  </motion.svg>
-                </div>
-              </div>
-
-              {/* Content inside the frame */}
-              <motion.div 
+              {/* Floating elements */}
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.6 }}
-                className="absolute bottom-0 left-0 right-0 text-center p-8"
+                className="absolute top-8 right-8"
               >
-                <h3 className="font-display text-2xl text-foreground mb-2">
-                  Market
-                  <br />
-                  Intelligence
-                  <br />
-                  Solutions
+                <div className="bg-primary/90 backdrop-blur-sm rounded-2xl p-4 border border-primary/50">
+                  <div className="text-2xl font-bold text-primary-foreground">87%</div>
+                  <div className="text-sm text-primary-foreground/80">Forecast Accuracy</div>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1, duration: 0.6 }}
+                className="absolute bottom-8 left-8"
+              >
+                <div className="bg-card/90 backdrop-blur-sm rounded-2xl p-4 border border-border">
+                  <div className="text-2xl font-bold text-foreground">24/7</div>
+                  <div className="text-sm text-muted-foreground">Support Available</div>
+                </div>
+              </motion.div>
+
+              {/* Rotating badge */}
+              <div className="absolute top-1/2 left-8 transform -translate-y-1/2 z-10">
+                <div className="relative w-20 h-20">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <motion.div 
+                      animate={{ rotate: 360 }}
+                      transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                      className="w-full h-full rounded-full border-4 border-primary/30 border-t-primary"
+                    />
+                    <div className="absolute inset-2 rounded-full bg-primary flex items-center justify-center">
+                      <ArrowUpRight className="w-6 h-6 text-primary-foreground" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Text overlay */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.4, duration: 0.8 }}
+                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-20 flex flex-col items-center justify-center"
+              >
+                <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-2 drop-shadow-lg">
+                  Market Intelligence
                 </h3>
-                <p className="text-muted-foreground text-sm mt-4 max-w-[200px] mx-auto">
-                  Since 2019, we've helped small and medium retailers grow!
+                <p className="text-lg text-white/90 drop-shadow-md">
+                  Data-Driven Growth Solutions
                 </p>
               </motion.div>
-            </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>
+
+      {/* Content Section - Below Hero */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.2, duration: 0.8 }}
+        className="container mx-auto px-4 pb-20"
+      >
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+            Transform Your Business with Data-Driven Insights
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            Since 2019, we’ve been helping businesses like yours unlock their full potential through 
+            advanced market intelligence, consumer insights, and strategic growth planning. 
+            Our proven methodologies have helped over 45 clients worldwide achieve remarkable results.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+            >
+              Get Started Today
+              <ArrowRight className="w-5 h-5" />
+            </a>
+            <a
+              href="/services"
+              className="inline-flex items-center gap-2 bg-card text-foreground px-8 py-4 rounded-lg font-semibold border border-border hover:bg-accent hover:text-accent-foreground transition-colors"
+            >
+              Our Services
+            </a>
+          </div>
+        </div>
+      </motion.div>
 
       {/* Bottom decorative line */}
       <motion.div 
