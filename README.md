@@ -1,73 +1,120 @@
-# Welcome to your Lovable project
+# MiSolutions
 
-## Project info
+**Modern Digital Agency Website**
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+A professional, modern website for MiSolutions - a digital agency specializing in business growth solutions, market intelligence, and digital transformation.
 
-## How can I edit this code?
+## 🚀 Live Demo
 
-There are several ways of editing your application.
+[https://bcrnic.github.io/MiSolutions/](https://bcrnic.github.io/MiSolutions/)
 
-**Use Lovable**
+## ✨ Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **Modern Design**: Dark theme with pink accent colors
+- **Responsive Layout**: Fully optimized for all devices
+- **Smooth Animations**: Built with Framer Motion
+- **Component-Based**: Modular React architecture
+- **TypeScript**: Full type safety
+- **SEO Optimized**: Meta tags and structured data
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠 Technologies Used
 
-**Use your preferred IDE**
+- **Frontend**: React 18 + TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS + shadcn/ui
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Routing**: React Router DOM
+- **Forms**: React Hook Form + Zod
+- **State Management**: TanStack Query
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📦 Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+```bash
+git clone https://github.com/bcrnic/MiSolutions.git
+cd MiSolutions
+```
 
-Follow these steps:
+2. Install dependencies:
+```bash
+npm install
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open [http://localhost:8080](http://localhost:8080) in your browser
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🚀 Deployment
 
-**Use GitHub Codespaces**
+### GitHub Pages
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This project is automatically deployed to GitHub Pages using GitHub Actions.
 
-## What technologies are used for this project?
+- **Source**: Main branch
+- **Build Directory**: `/dist`
+- **URL**: https://bcrnic.github.io/MiSolutions/
 
-This project is built with:
+### Manual Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Build the project:
+```bash
+npm run build
+```
 
-## How can I deploy this project?
+2. Deploy the `dist` folder to your hosting provider
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 📁 Project Structure
 
-## Can I connect a custom domain to my Lovable project?
+```
+MiSolutions/
+├── src/
+│   ├── components/
+│   │   ├── layout/      # Header, Footer, Navigation
+│   │   ├── sections/    # Page sections (Hero, Services, etc.)
+│   │   └── ui/          # Reusable UI components
+│   ├── pages/           # Route pages
+│   ├── hooks/           # Custom React hooks
+│   ├── lib/             # Utility functions
+│   └── assets/          # Static assets
+├── public/              # Public assets
+└── dist/               # Build output
+```
 
-Yes, you can!
+## 🎨 Design System
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- **Primary Colors**: Pink (#ec4899) gradient
+- **Background**: Dark theme (#1a1a1a)
+- **Typography**: Inter (sans-serif) + DM Serif Display (serif)
+- **Components**: shadcn/ui component library
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🔧 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Contact
+
+- **GitHub**: [@bcrnic](https://github.com/bcrnic)
+- **Live Site**: https://bcrnic.github.io/MiSolutions/
+
+---
+
+Built with ❤️ using React, TypeScript, and Tailwind CSS
