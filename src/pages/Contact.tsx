@@ -65,16 +65,48 @@ const Contact = () => {
 
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const form = e.target as HTMLFormElement;
+      const formData = new FormData(form);
+      
+      // Submit to FormSubmit.io
+      const response = await fetch('https://formsubmit.co/marens.radic@gmail.com', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    
-    toast({
-      title: "Message sent successfully!",
-      description: "We'll get back to you within 24 hours.",
-    });
+      if (response.ok) {
+        setIsSubmitting(false);
+        setIsSubmitted(true);
+        
+        toast({
+          title: "Message sent successfully!",
+          description: "We'll get back to you within 24 hours.",
+        });
+        
+        // Reset form
+        form.reset();
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      setIsSubmitting(false);
+      toast({
+        title: "Error sending message",
+        description: "Please try again or contact us directly at marens.radic@gmail.com",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
@@ -222,6 +254,12 @@ const Contact = () => {
                         Send Us a Message
                       </h3>
                       <form onSubmit={handleSubmit} className="space-y-6">
+                        {/* FormSubmit.io hidden fields */}
+                        <input type="hidden" name="_subject" value="New Contact Form Submission from MiSolutions" />
+                        <input type="hidden" name="_template" value="table" />
+                        <input type="text" name="_honey" style={{display:"none"}} />
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input type="hidden" name="_next" value="https://bcrnic.github.io/MiSolutions/contact?success=true" />
                         <div className="grid sm:grid-cols-2 gap-6">
                           <div>
                             <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
