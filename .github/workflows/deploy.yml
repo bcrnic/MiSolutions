@@ -34,7 +34,6 @@ jobs:
         sed -i 's|@Lovable|@MiSolutions|g' dist/index.html
         sed -i 's|Precision Market Intelligence for Retail Growth|Digital Agency Solutions|g' dist/index.html
         sed -i 's|Unlock retail growth with data-driven market research, consumer insights, and marketing strategies|Professional digital agency specializing in business growth solutions|g' dist/index.html
-        sed -i 's|/assets/|./assets/|g' dist/index.html
 
     - name: Setup Pages
       uses: actions/configure-pages@v4
