@@ -10,7 +10,7 @@ A professional, modern website for MiSolutions - a digital agency specializing i
 
 ## Features
 
-- **Modern Design**: Dark theme with pink accent colors
+- **Modern Design**: Dark blue theme with blue/cyan accent colors
 - **Responsive Layout**: Fully optimized for all devices
 - **Smooth Animations**: Built with Framer Motion
 - **Component-Based**: Modular React architecture
@@ -46,7 +46,7 @@ npm install
 npm run dev
 ```
 
-4. Open [http://localhost:8080](http://localhost:8080) in your browser
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
 
 ## Deployment
 
@@ -86,10 +86,16 @@ MiSolutions/
 
 ## Design System
 
-- **Primary Colors**: Pink (#ec4899) gradient
-- **Background**: Dark theme (#1a1a1a)
+- **Primary Colors**: Smart Blue (#3066BE) + Dark Cyan (#119DA4)
+- **Supporting Colors**: Steel Blue (#6D9DC5), Pearl Aqua (#80DED9), Icy Aqua (#AEECEF)
+- **Background**: Dark blue theme (configured via CSS variables)
 - **Typography**: Inter (sans-serif) + DM Serif Display (serif)
 - **Components**: shadcn/ui component library
+
+### Theme Configuration
+
+- **CSS variables**: `src/index.css` (e.g. `--background`, `--primary`, `--accent`, gradients, shadows)
+- **Tailwind mapping**: `tailwind.config.ts` (uses `hsl(var(--...))` tokens)
 
 ## Available Scripts
 
