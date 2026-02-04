@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowUpRight, Star, Calendar } from "lucide-react";
 import { motion } from "framer-motion";
-import heroAbstract from "@/assets/hero-abstract.svg";
+import heroAbstract from "@/assets/hero-abstract.png";
 
 const HeroSection = () => {
   return (
@@ -71,7 +71,7 @@ const HeroSection = () => {
               className="inline-block"
             >
               <motion.div 
-                whileHover={{ y: -5, boxShadow: "0 20px 40px rgba(250, 146, 195, 0.3)" }}
+                whileHover={{ y: -5, boxShadow: "0 20px 40px hsl(var(--primary) / 0.3)" }}
                 transition={{ duration: 0.3 }}
                 className="bg-primary rounded-3xl p-6 min-w-[280px]"
               >

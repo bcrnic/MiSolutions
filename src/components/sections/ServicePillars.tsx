@@ -114,7 +114,7 @@ const ServicePillars = () => {
               className="group relative"
             >
               <motion.div 
-                whileHover={{ boxShadow: "0 20px 40px rgba(250, 146, 195, 0.15)" }}
+                whileHover={{ boxShadow: "0 20px 40px hsl(var(--primary) / 0.15)" }}
                 className="bg-card rounded-2xl p-8 shadow-card border border-border h-full flex flex-col transition-all duration-300"
               >
                 {/* Icon */}

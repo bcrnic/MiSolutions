@@ -150,7 +150,7 @@ const StatsSection = () => {
             >
               <motion.div 
                 whileHover={{ 
-                  boxShadow: "0 0 30px rgba(250, 146, 195, 0.2)"
+                  boxShadow: "0 0 30px hsl(var(--primary) / 0.2)"
                 }}
                 className="bg-card border border-border rounded-2xl p-8 transition-all duration-300 h-full hover:border-primary"
               >
