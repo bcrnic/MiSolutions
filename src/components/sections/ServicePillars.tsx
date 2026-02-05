@@ -25,7 +25,7 @@ const services = [
     title: "Marketing Strategy",
     description: "Data-driven marketing strategies that maximize ROI, optimize channel mix, and drive measurable revenue growth.",
     features: ["Channel optimization", "Campaign performance", "ROI measurement"],
-    color: "from-secondary to-muted",
+    color: "from-primary to-accent",
     delay: 0.2,
   },
 ];
