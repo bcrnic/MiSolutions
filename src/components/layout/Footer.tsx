@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { Sparkles, Mail, Phone, MapPin, Linkedin, Twitter, Facebook, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import logo from "@/assets/misolutions-icon.svg";
 
 const Footer = () => {
   return (
@@ -34,11 +35,14 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-primary-foreground" />
-              </div>
+              <img
+                src={logo}
+                alt="MiSolutions logo"
+                className="w-10 h-10"
+              />
               <span className="font-display text-2xl">MiSolutions</span>
             </Link>
+
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Precision market intelligence for retail success. We analyze data to deliver actionable insights that drive growth.
             </p>
