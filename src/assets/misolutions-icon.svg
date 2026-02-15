@@ -2,14 +2,14 @@
   <defs>
     <!-- Background gradient -->
     <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#2FE0D0"></stop>
-      <stop offset="100%" stop-color="#0B7FA4"></stop>
+      <stop offset="0%" stop-color="#90F1EF"></stop>
+      <stop offset="100%" stop-color="#7BF1A8"></stop>
     </linearGradient>
 
     <!-- Bulb gradient -->
     <linearGradient id="bulbGradient" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#E9FDFF"></stop>
-      <stop offset="100%" stop-color="#6FD6FF"></stop>
+      <stop offset="0%" stop-color="#FFEF9F"></stop>
+      <stop offset="100%" stop-color="#FFD6E0"></stop>
     </linearGradient>
   </defs>
 
@@ -28,7 +28,7 @@
 
   <!-- Bulb base -->
   <rect x="220" y="396" width="72" height="22" rx="11" fill="#FFFFFF"></rect>
-  <rect x="230" y="422" width="52" height="16" rx="8" fill="#DCEFF6"></rect>
+  <rect x="230" y="422" width="52" height="16" rx="8" fill="#90F1EF"></rect>
 
   <!-- M-shaped filament (longer legs) -->
   <path d="M224 232
@@ -37,5 +37,5 @@
        C296 260 292 296 278 322
        C270 338 262 352 256 360
        C250 352 242 338 234 322
-       C220 296 216 260 224 232Z" fill="none" stroke="#1A9DC1" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
+       C220 296 216 260 224 232Z" fill="none" stroke="#7BF1A8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>

@@ -16,10 +16,10 @@ const buttonVariants = cva(
         ghost: "hover:bg-muted hover:text-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         // Custom agency variants
-        accent: "bg-accent text-accent-foreground hover:bg-orange-dark shadow-md hover:shadow-glow font-bold",
-        hero: "bg-accent text-accent-foreground hover:bg-orange-dark shadow-lg hover:shadow-glow transform hover:-translate-y-0.5 font-bold",
+        accent: "bg-accent text-accent-foreground hover:bg-accent/90 shadow-md hover:shadow-glow font-bold",
+        hero: "bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg hover:shadow-glow transform hover:-translate-y-0.5 font-bold",
         "hero-outline": "border-2 border-primary-foreground/30 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground hover:text-primary backdrop-blur-sm",
-        navy: "bg-primary text-primary-foreground hover:bg-navy-dark shadow-md hover:shadow-lg",
+        navy: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-md hover:shadow-lg",
         "navy-outline": "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-primary-foreground",
       },
       size: {

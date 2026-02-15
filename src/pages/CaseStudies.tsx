@@ -52,7 +52,7 @@ const caseStudies = [
       { month: "May", before: 80, after: 93 },
       { month: "Jun", before: 79, after: 95 },
     ],
-    color: "from-accent to-orange-dark",
+    color: "from-accent to-muted",
   },
   {
     id: "homestyle",

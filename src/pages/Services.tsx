@@ -46,7 +46,7 @@ const services = [
       "SWOT analysis",
     ],
     stats: { value: "80+", label: "Competitors Tracked" },
-    color: "from-accent to-orange-dark",
+    color: "from-accent to-muted",
   },
   {
     id: "consumer",
@@ -61,7 +61,7 @@ const services = [
       "Demographic profiling",
     ],
     stats: { value: "5k+", label: "Consumers Studied" },
-    color: "from-secondary to-navy-dark",
+    color: "from-secondary to-primary",
   },
   {
     id: "forecasting",
