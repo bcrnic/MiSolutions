@@ -84,7 +84,7 @@ const Footer = () => {
                 <li key={service}>
                   <Link
                     to="/services"
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-muted-foreground hover:text-foreground hover:underline underline-offset-4 transition-colors"
                   >
                     {service}
                   </Link>
@@ -105,7 +105,7 @@ const Footer = () => {
                 <li key={item.name}>
                   <Link
                     to={item.path}
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-muted-foreground hover:text-foreground hover:underline underline-offset-4 transition-colors"
                   >
                     {item.name}
                   </Link>
@@ -119,21 +119,21 @@ const Footer = () => {
             <h4 className="font-semibold text-lg mb-6">Get in Touch</h4>
             <ul className="space-y-4 mb-8">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                <MapPin className="w-5 h-5 text-foreground/80 mt-0.5 shrink-0" />
                 <span className="text-muted-foreground">
                   Milana Mikrut<br />
                   Trg Kamenskog 6
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-primary shrink-0" />
-                <a href="tel:+381642130463" className="text-muted-foreground hover:text-primary transition-colors">
+                <Phone className="w-5 h-5 text-foreground/80 shrink-0" />
+                <a href="tel:+381642130463" className="text-muted-foreground hover:text-foreground hover:underline underline-offset-4 transition-colors">
                   +381 64 213 0463
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-primary shrink-0" />
-                <a href="mailto:marens.radic@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                <Mail className="w-5 h-5 text-foreground/80 shrink-0" />
+                <a href="mailto:marens.radic@gmail.com" className="text-muted-foreground hover:text-foreground hover:underline underline-offset-4 transition-colors">
                   marens.radic@gmail.com
                 </a>
               </li>
@@ -160,8 +160,8 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
             <p>© 2024 MiSolutions. All rights reserved.</p>
             <div className="flex gap-6">
-              <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
-              <Link to="/terms" className="hover:text-primary transition-colors">Terms of Service</Link>
+              <Link to="/privacy" className="hover:text-foreground hover:underline underline-offset-4 transition-colors">Privacy Policy</Link>
+              <Link to="/terms" className="hover:text-foreground hover:underline underline-offset-4 transition-colors">Terms of Service</Link>
             </div>
           </div>
         </div>

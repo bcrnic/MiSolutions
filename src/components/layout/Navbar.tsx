@@ -33,8 +33,8 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? "bg-background/95 backdrop-blur-md py-3"
-          : "bg-transparent py-5"
+          ? "bg-background/95 backdrop-blur-md border-b border-border/60 py-3"
+          : "bg-background/70 backdrop-blur-md border-b border-border/40 py-5"
       )}
     >
       <div className="container mx-auto px-4">
@@ -62,7 +62,7 @@ const Navbar = () => {
                 className={cn(
                   "px-4 py-2 text-sm font-medium transition-colors rounded-full",
                   isActive(link.href)
-                    ? "text-primary"
+                    ? "text-foreground underline underline-offset-4 decoration-2 decoration-accent"
                     : "text-foreground/70 hover:text-foreground"
                 )}
               >
@@ -73,11 +73,11 @@ const Navbar = () => {
 
           {/* Right side actions */}
           <div className="hidden lg:flex items-center gap-4">
-            <button className="p-2 text-foreground/70 hover:text-foreground transition-colors">
+            <button className="p-2 text-foreground/80 hover:text-foreground transition-colors">
               <Search className="w-5 h-5" />
             </button>
             <button
-              className="p-2 text-foreground/70 hover:text-foreground transition-colors"
+              className="p-2 text-foreground/80 hover:text-foreground transition-colors"
               onClick={() => setIsOpen(!isOpen)}
             >
               <Menu className="w-5 h-5" />
